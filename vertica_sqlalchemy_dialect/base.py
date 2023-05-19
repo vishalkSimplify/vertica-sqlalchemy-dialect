@@ -1204,3 +1204,7 @@ class VerticaDialect(default.DefaultDialect):
             All the properties shown here are what Vertica uses for a client connecting via OAUTH.", "properties": {"discovery_url": str(discovery_url),
                 "client_id": str(client_id), "introspect_url": str(introspect_url), "auth_oid ": str(auth_oid), "client_secret": str(client_secret),
                 "is_auth_enabled": str(is_auth_enabled), "auth_priority": str(auth_priority), "address_priority": str(address_priority), "is_fallthrough_enabled": str(is_fallthrough_enabled), }}
+
+
+
+##############################
