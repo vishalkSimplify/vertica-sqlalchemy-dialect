@@ -262,3 +262,11 @@ def test_get_oauth_comment(vconn):
     assert len(oc["properties"]["is_fallthrough_enabled"])>0
 
 
+
+#################################################### specific to Datahub ####################################################
+
+def test_get_table_owner(vconn):
+    oc = vconn[0].dialect.get_table_owner(vconn[1],schema="public")
+    owner_info = oc[0][1]
+    assert owner_info == "dbadmin"
+

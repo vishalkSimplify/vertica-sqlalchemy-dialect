@@ -3,10 +3,10 @@ name: Test Vertica-SQLAlchemy dialect
 on:
   push:
     branches:
-     - main
+     - vishal-dev
   pull_request:
     branches:
-     - main
+     - vishal-dev
 
 env:
   DB_PWD: 'abc123'
